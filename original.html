@@ -1,0 +1,56 @@
+<!doctype HTML>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.1/aframe/build/aframe-ar.js"></script>
+<script src="js/events.js"></script>
+
+<style>
+
+
+body{
+
+}
+h1 {
+  color: orange;
+}
+.recruit{
+  clear: both;
+  width: 500px;
+
+}
+#arjsDebugUIContainer{
+  display: none;
+  }
+</style>
+</head>
+
+  <body> <!--style='margin : 0px; overflow: hidden;'>-->
+
+    <a-scene embedded arjs cursor="rayOrigin: mouse" accepts-clicks>
+
+    
+      <a-marker  id="animated-marker" type='pattern' url='data/a.patt'>
+  <a-image navigate-on-click="url: http://google.com" src="images/test.png" position="0 3 -1" width="5" height="3.56"></a-image>
+      <!--<a-box navigate-on-click="https://www.yahoo.com" id="animated-model" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>-->
+      </a-marker>
+
+      <a-marker   id="animated-marker" type='pattern' url="data/c.patt">
+
+        <a-image src="images/mypost.png" position="0 3 -1" width="5" height="3.56" ></a-image>
+      </a-marker>
+
+  <a-marker id="animated-marker" type='pattern' url="data/b.patt">
+        <a-image src="images/test.png" position="0 3 -1" width="5" height="3.56"></a-image>
+
+  </a-marker>
+
+
+
+
+
+  	<a-entity camera></a-entity>-->
+    </a-scene>
+  </body>
+</html>
